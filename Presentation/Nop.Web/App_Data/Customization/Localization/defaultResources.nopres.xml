@@ -1,0 +1,132 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Language Name="English">
+
+    
+    <LocaleResource Name="Admin.OfferInfos.AddNew">
+        <Value>Add New</Value>
+    </LocaleResource>
+
+    <!--<LocaleResource Name="Admin.OfferInfos.AddNew">
+        <Value>Add a new Offer Info</Value>
+    </LocaleResource>-->
+
+    <LocaleResource Name="Admin.OfferInfos.Fields.Name">
+        <Value>Name</Value>
+    </LocaleResource>
+    
+    <LocaleResource Name="Admin.OfferInfos.Fields.Description">
+        <Value>Description</Value>
+    </LocaleResource>
+    
+    <LocaleResource Name="Admin.OfferInfos.Fields.Active">
+        <Value>Active</Value>
+    </LocaleResource>
+
+    <LocaleResource Name="Admin.OfferInfos.Fields.StartDate">
+        <Value>StartDate</Value>
+    </LocaleResource>
+
+    <LocaleResource Name="Admin.OfferInfos.Fields.EndDate">
+        <Value>EndDate</Value>
+    </LocaleResource>
+    
+    <LocaleResource Name="Admin.OfferInfos.BackToList">
+        <Value>Back to OfferInfo list</Value>
+    </LocaleResource>
+
+    <LocaleResource Name="Admin.OfferInfos.Edit1">
+        <Value>Edit OfferInfo details</Value>
+    </LocaleResource>
+
+    <LocaleResource Name="Admin.OfferInfos.Fields.DisplayOrder">
+        <Value>Display order</Value>
+    </LocaleResource>
+
+    <LocaleResource Name="Admin.Common.Save">
+        <Value>Save</Value>
+    </LocaleResource>
+    
+    <LocaleResource Name="Admin.Common.SaveContinue">
+        <Value>Save and Continue Edit</Value>
+    </LocaleResource>
+
+    <LocaleResource Name="Admin.OfferInfos..EditOfferInfosDetails">
+        <Value>Edit Offer Infos details</Value>
+    </LocaleResource>
+
+    <LocaleResource Name="Admin.Common.Delete">
+        <Value>Delete</Value>
+    </LocaleResource>
+
+    <LocaleResource Name="Admin.OfferInfos.Deleted">
+        <Value>
+            The OfferInfo has been deleted successfully.
+        </Value>
+    </LocaleResource>
+
+    
+<!--Employee Task Resource String-->
+    
+    <LocaleResource Name="Admin.Employee">
+        <Value>Employee Records</Value>
+    </LocaleResource>
+
+    <!--<LocaleResource Name="Admin.Common.AddNew">
+        <Value>Add New</Value>
+    </LocaleResource>-->
+
+    <LocaleResource Name="Admin.employee.Fields.Name">
+        <Value>Name</Value>
+    </LocaleResource>
+
+    <LocaleResource Name="Admin.employee.Fields.Designation">
+        <Value>Designation</Value>
+    </LocaleResource>
+
+    <LocaleResource Name="Admin.employee.Fields.PhoneNo">
+        <Value>Phone No.</Value>
+    </LocaleResource>
+
+     <!--for dropdown filed heading-->
+    
+    <LocaleResource Name="Admin.employee.Fields.Country">
+        <Value>Country</Value>
+    </LocaleResource>
+
+    <LocaleResource Name="Admin.employee.Fields.State">
+        <Value>State</Value>
+    </LocaleResource>
+
+    <LocaleResource Name="Admin.employee.Fields.City">
+        <Value>City</Value>
+    </LocaleResource>    
+    <LocaleResource Name=" Admin.Employee.BackToList">
+        <Value>Back To List</Value>
+    </LocaleResource>
+    <LocaleResource Name=" Admin.Employee.EditEmployeeDetails">
+        <Value>Employee Details</Value>
+    </LocaleResource>
+
+    <LocaleResource Name=" Admin.Employee.EditEmployeeDetails">
+        <Value>Employee Details</Value>
+    </LocaleResource>
+
+    <LocaleResource Name="Admin.Employees.Deleted">
+        <Value>Employee Details</Value>
+    </LocaleResource>
+
+    <LocaleResource Name="Admin.Employee.AddNew">
+        <Value>Employee Form</Value>
+    </LocaleResource>
+
+    <LocaleResource Name="Admin.Employee.Info">
+        <Value>Employee Info</Value>
+    </LocaleResource>
+
+    <LocaleResource Name="Admin.Employee.form">
+        <Value>Employee Info</Value>
+    </LocaleResource>
+    <!--<LocaleResource Name="Admin.Common.Edit">
+        <Value>Edit</Value>
+    </LocaleResource>-->
+</Language>

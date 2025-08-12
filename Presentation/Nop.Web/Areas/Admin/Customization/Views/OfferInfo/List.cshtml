@@ -1,0 +1,94 @@
+﻿@using Nop.Web.Areas.Admin.Model
+@using Nop.Web.Framework.Models.DataTables
+@model OfferInfoSearchModel
+@{
+    ViewBag.PageTitle = T("Offer Infos Record").Text;
+    //active menu item (system name)
+    NopHtml.SetActiveMenuItemSystemName("OfferInfos");
+
+    Layout = "_AdminLayout";
+}
+
+<div class="content-header clearfix">
+    <h1 class="float-left">
+        @T("Admin.OfferInfos")
+    </h1>
+    <div class="float-right">
+        <a asp-action="Create" class="btn btn-primary">
+            <i class="fas fa-plus-square"></i>
+            @T("Admin.Common.AddNew")
+        </a>
+        </div>
+</div>
+<section class="content">
+    <div class="container-fluid">
+        <div class="form-horizontal">
+            <div class="cards-group">
+                <div class="card card-default">                    
+                    <div class = "card-body">
+  
+                        @await Html.PartialAsync("Table", new DataTablesModel
+                        {
+                            Name = "offerinfo-grid",
+                            UrlRead = new DataUrl("List", "OfferInfo", null),
+                            Length = Model.PageSize,
+                            LengthMenu = Model.AvailablePageSizes,
+                            Filters = new List<FilterParameter>{},
+                            ColumnCollection = new List<ColumnProperty>
+                            {
+                                new ColumnProperty(nameof(OfferInfoModel.Name))
+                                {
+                                    Title = T("Admin.OfferInfos.Fields.Name").Text
+                                },
+
+                                new ColumnProperty(nameof(OfferInfoModel.Description))
+                                {
+                                    Title = T("Admin.OfferInfos.Fields.Description").Text,
+                                    Width = "100",
+                                    ClassName = NopColumnClassDefaults.CenterAll,
+                                    
+                                },
+
+                                new ColumnProperty(nameof(OfferInfoModel.Active))
+                                {
+                                    Title = T("Admin.OfferInfos.Fields.Active").Text,
+                                    Width = "100",
+                                    ClassName = NopColumnClassDefaults.CenterAll,
+                                    
+                                },
+
+                                new ColumnProperty(nameof(OfferInfoModel.StartDate))
+                                {
+                                    Title = T("Admin.OfferInfos.Fields.StartDate").Text,
+                                    Width = "100",
+                                    ClassName = NopColumnClassDefaults.CenterAll,
+                                    
+                                },
+
+                                new ColumnProperty(nameof(OfferInfoModel.EndDate))
+                                {
+                                    Title = T("Admin.OfferInfos.Fields.EndDate").Text,
+                                    Width = "100",
+                                    ClassName = NopColumnClassDefaults.CenterAll,
+                                    
+                                },
+
+                                new ColumnProperty(nameof(OfferInfoModel.Id))
+                                {
+                                    Title = T("Admin.Common.Edit").Text,
+                                    Width = "100",
+                                    ClassName =  NopColumnClassDefaults.Button,
+                                    Render = new RenderButtonEdit(new DataUrl("Edit1"))
+                                }
+                            }
+                        }) 
+                    </div>
+                    <span id="OfferInfo-delete" class="btn btn-danger">
+                        <i class="far fa-trash-alt"></i>
+                        @T("Admin.Common.Delete")
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
